@@ -1,10 +1,10 @@
-# Project Name
-> Here goes your awesome project description!
-
+# Music Streaming App Data Modeling 
+>This goal of this project is to model data on user activity of a music streaming app, Sparkify in a NoSQL database 
+- Apache Cassandra - for testing query performance.
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies](#technologies)
+* [Technologies](#technologies/Libraries)
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
@@ -12,18 +12,34 @@
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+The project's main aim is to help the analysis team test the query performance for data modeled from a CSV file on
+the music streaming app. The analyis team is interesting in understanding what songs users are listening to. An ETL
+pipeline is created to transfer data stored in a directory of CSV files `event-datafile-new.csv` to an Apache Cassandra 
+database.
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![event_datafile_new csv screenshot](https://user-images.githubusercontent.com/76578061/105951570-7fde4500-602d-11eb-94db-b2c7ad4dbb87.png)
 
-## Technologies
-* Tech 1 - version 1.0
-* Tech 2 - version 2.0
-* Tech 3 - version 3.0
 
-## Setup
-Describe how to install / setup your local environement / add link to demo version.
+## Technologies/Libaries
+* Python - version 3.0
+* jupyterlap - version 1.0.9
+* Pandas Library
+* Cassandra Library
+* RegEx Library
+* OS Library
+* GlOB Library
+* Numpy Library
+* JSON Library
+* CSV Library
+
+## Project Setup
+The project is divided into two main parts: Part I involves the development of the ETL pipeline for pre-processing files prior to creating 
+data modeling. Part II involves creating tables on Apache Cassandra to load the processed data unto for quering. We shall look at both in detail.
+
+### 1. Part I: ETL pipeline for pre-processing of files
+
+### 2. Part II: Create tables on Apache Cassandra and load processed data unto tables
 
 ## Code Examples
 Show examples of usage:
