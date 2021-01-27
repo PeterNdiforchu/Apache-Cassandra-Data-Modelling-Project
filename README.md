@@ -1,6 +1,6 @@
 # Music Streaming App Data Modeling 
->This goal of this project is to model data on user activity of a music streaming app, Sparkify in a NoSQL database 
-- Apache Cassandra - for testing query performance.
+>This goal of this project is to model data on user activity of a music streaming app, Sparkify in a NoSQL database, 
+Apache Cassandra for testing query performance.
 ## Table of contents
 * [General info](#general-info)
 * [Screenshots](#screenshots)
@@ -28,7 +28,7 @@ database.
 * Cassandra Library
 * RegEx Library
 * OS Library
-* GlOB Library
+* GLOB Library
 * Numpy Library
 * JSON Library
 * CSV Library
