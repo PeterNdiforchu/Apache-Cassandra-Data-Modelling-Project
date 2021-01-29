@@ -1,13 +1,15 @@
 # Music Streaming App Data Modeling 
 
->This goal of this project is to model data on user activity of a music streaming app, Sparkify in a NoSQL database, 
+>The goal of this project is to model data on user activity of a music streaming app, Sparkify in a NoSQL database, 
 Apache Cassandra for testing query performance.
+
 ## Table of contents
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies](#technologies/Libraries)
+* [Technologies/Libraries](#technologies/Libraries)
 * [Project Setup](#projectsetup)
+* [Quality Assurance](#quality-assurance)
 * [Contact](#contact)
 
 ## General info
@@ -20,6 +22,7 @@ database.
 ## Screenshots
 
 ![event_datafile_new csv screenshot](https:/d/user-images.githubusercontent.com/76578061/105951570-7fde4500-602d-11eb-94db-b2c7ad4dbb87.png)
+
 *Fig. 1: Denormalized data of `event_datafile_new.csv` for data modeling 
 
 ## Technologies/Libaries
@@ -110,6 +113,7 @@ except Exception as e:
         session.execute(query2, (int(line[10]), line[1], line[4], line[9]))`
 
 ### Quality Assurance
+
 We cannot complete this project until, we are completely certain that we are getting right results; that is why we must test the performance
 of our query using `SELECT` statements. After testing all 3 queries, we got the right results thus validating the workability our code.
 
@@ -117,38 +121,42 @@ of our query using `SELECT` statements. After testing all 3 queries, we got the 
 
 ##### Query 1
 
-`query = "CREATE TABLE IF NOT EXISTS music_app_history"
+`
+query = "CREATE TABLE IF NOT EXISTS music_app_history"
 query = query + "(sessionid int, iteminsession int, artist text, song text, length float, PRIMARY KEY (sessionid, iteminSession))"
 try:
     session.execute(query)
 except Exception as e:
-    print(e)`
-    
+    print(e)
+`  
+
 ![select_statement_query](https://user-images.githubusercontent.com/76578061/106245446-b05ae600-61c9-11eb-88cd-101692d4e50a.png)
 
 ##### Query 2
 
-`query1 = "SELECT artist, song, firstname, lastname FROM music_app_history1 WHERE userid = 10 AND sessionId = 182"
+`
+query1 = "SELECT artist, song, firstname, lastname FROM music_app_history1 WHERE userid = 10 AND sessionId = 182"
 try:
     rows = session.execute(query1)
 except Exception as e:
     print(e)
-    
 for row in rows:
-    print (row.artist, row.song, row.firstname, row.lastname)`
+    print (row.artist, row.song, row.firstname, row.lastname)
+`
     
 ![select_statement_query1](https://user-images.githubusercontent.com/76578061/106245707-24958980-61ca-11eb-8010-617e54742b1b.png)
 
 ##### Query 3
 
-`query2 = "SELECT firstname, lastname FROM music_app_history2 WHERE song = 'All Hands Against His Own'"
+`
+query2 = "SELECT firstname, lastname FROM music_app_history2 WHERE song = 'All Hands Against His Own'"
 try:
     rows = session.execute(query2)
 except Exception as e:
-    print(e)
-    
+    print(e)  
 for row in rows:
-    print (row.firstname, row.lastname)`
+    print (row.firstname, row.lastname)
+`
     
 ![select_statement_query2](https://user-images.githubusercontent.com/76578061/106245873-776f4100-61ca-11eb-9cf6-458e92b6a513.png)
 
