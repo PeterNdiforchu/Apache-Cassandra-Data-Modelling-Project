@@ -25,7 +25,7 @@ database.
 
 *Fig. 1: Denormalized data of `event_datafile_new.csv` for data modeling 
 
-## Technologies/Libaries
+## Technologies and Libaries
 
 * Python - version 3.0
 * jupyterlap - version 1.0.9
