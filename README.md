@@ -7,8 +7,8 @@ Apache Cassandra for testing query performance.
 
 * [General info](#general-info)
 * [Screenshots](#screenshots)
-* [Technologies/Libraries](#technologies/Libraries)
-* [Project Setup](#projectsetup)
+* [Technologies/Libraries](#technologies-Libraries)
+* [Project Setup](#project-setup)
 * [Quality Assurance](#quality-assurance)
 * [Contact](#contact)
 
