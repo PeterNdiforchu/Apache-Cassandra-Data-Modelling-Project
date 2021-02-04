@@ -21,7 +21,7 @@ database.
 
 ## Screenshots
 
-![event_datafile_new csv screenshot](https:/d/user-images.githubusercontent.com/76578061/105951570-7fde4500-602d-11eb-94db-b2c7ad4dbb87.png)
+![event_datafile_new csv screenshot](https://user-images.githubusercontent.com/76578061/106852203-e9d19c80-6674-11eb-8b90-1f0ec15c7ba9.png)
 
 *Fig. 1: Denormalized data of `event_datafile_new.csv` for data modeling 
 
